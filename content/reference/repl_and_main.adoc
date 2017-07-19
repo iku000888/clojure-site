@@ -22,7 +22,7 @@ The `clojure.main` namespace provides functions that allow Clojure programs and 
 
 The `clojure.main/main` entry point accepts a variety of arguments and flags as described in its usage message:
 
-[source,clojure]
+[source,shell]
 ----
 Usage: java -cp clojure.jar clojure.main [init-opt*] [main-opt] [arg*]
 
@@ -133,7 +133,7 @@ Following is an example of starting a socket server with a repl listener. This c
 
 An example client you can use to connect to this socket repl is telnet:
 
-[source,clojure]
+[source,shell]
 ----
 $ telnet 127.0.0.1 5555
 Trying 127.0.0.1...
@@ -145,7 +145,7 @@ hello
 
 You can instruct the server to close the client socket repl session by using the special command `:repl/quit`:
 
-[source,clojure]
+[source,clojure-repl]
 ----
 user=> :repl/quit
 Connection closed by foreign host.
@@ -164,6 +164,6 @@ Reusable REPL: `https://clojure.github.io/clojure/clojure.main-api.html#clojure.
 
 Allowing set! for the customary REPL vars: `https://clojure.github.io/clojure/clojure.main-api.html#clojure.main/with-bindings[clojure.main/with-bindings]`
 
-Socket server control: `https://clojure.github.io/clojure/clojure.core-api.html#clojure.core.server/start-server[clojure.core.server/start-server]` `https://clojure.github.io/clojure/clojure.core-api.html#clojure.core.server/stop-server[clojure.core.server/stop-server]` `https://clojure.github.io/clojure/clojure.core-api.html#clojure.core.server/stop-servers[clojure.core.server/stop-servers]` 
+Socket server control: `https://clojure.github.io/clojure/clojure.core-api.html#clojure.core.server/start-server[clojure.core.server/start-server]` `https://clojure.github.io/clojure/clojure.core-api.html#clojure.core.server/stop-server[clojure.core.server/stop-server]` `https://clojure.github.io/clojure/clojure.core-api.html#clojure.core.server/stop-servers[clojure.core.server/stop-servers]`
 
 Socket repl: `https://clojure.github.io/clojure/clojure.core-api.html#clojure.core.server/repl[clojure.core.server/repl]`
